@@ -1,0 +1,30 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Glassmorphism Effect */
+.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.7); /* Light mode background */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark .navbar-scrolled {
+    background-color: rgba(15, 23, 42, 0.7); /* Dark mode background */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Skill bar animation */
+.skill-bar {
+    width: 0%;
+    transition: width 1s ease-out;
+}
+
+.skill-item.animated .skill-bar {
+    animation: progressFill 1s ease-out forwards;
+}
